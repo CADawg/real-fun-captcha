@@ -56,8 +56,6 @@ class CatCaptchaClass {
 
         captchaAnswerContainerOuter.append(captchaAnswerContainer);
 
-        captchaAnswerContainerOuter.append("<div class=\"spacer-lol\"></div>");
-
         this.element.append(captchaAnswerContainerOuter);
     }
 

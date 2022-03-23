@@ -1,0 +1,147 @@
+.funny-captcha {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+.funny-captcha * {
+  box-sizing: border-box;
+}
+.funny-captcha .captcha-answer-container {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 400px;
+  max-width: 100vw;
+}
+.funny-captcha .captcha-answer-container-inner {
+  width: 100%;
+  padding: 7px;
+  border-bottom: 1px solid lightgray;
+}
+.funny-captcha .captcha-answer-container-inner .captcha-header {
+  background-color: #1a73e8;
+  color: white;
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.funny-captcha .captcha-answer-container-inner .captcha-header h1 {
+  font-weight: normal;
+  font-size: 1em;
+  padding: 0 15px;
+}
+.funny-captcha .captcha-answer-container-inner .captcha-header h1 strong {
+  font-weight: bolder;
+  display: block;
+  font-size: 1.6em;
+}
+.funny-captcha .captcha-answer-container-inner .captcha-header h1 .captcha-lowlight-text {
+  font-weight: normal;
+  margin: 2px 0 0;
+}
+.funny-captcha .captcha-answer-container-inner .captcha-header h1 .captcha-lowlight-text.some-selected {
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.5);
+}
+.funny-captcha .captcha-answer-container-inner .captcha-header img {
+  width: 90px;
+  height: 90px;
+}
+.funny-captcha .captcha-answer-container-inner .captcha-header .spacer-lol {
+  flex: 1px;
+  flex-grow: 1;
+}
+.funny-captcha .captcha-answer-container-inner .captcha-columns {
+  width: 100%;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+}
+.funny-captcha .captcha-answer-container-inner .captcha-columns .captcha-column {
+  display: flex;
+  padding: 0;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 100%;
+  flex-wrap: nowrap;
+  margin: 0 0 3px;
+}
+.funny-captcha .captcha-answer-container-inner .captcha-columns .captcha-column:last-of-type {
+  margin-bottom: 0;
+}
+.funny-captcha .captcha-answer-container-inner .captcha-columns .captcha-column div {
+  display: flex;
+  height: 100%;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: 0 0 0 3px;
+}
+.funny-captcha .captcha-answer-container-inner .captcha-columns .captcha-column div:first-of-type {
+  margin: 0;
+}
+.funny-captcha .captcha-answer-container-inner .captcha-columns .captcha-column img {
+  display: block;
+  content: "";
+  width: 0;
+  margin: 0;
+  transform: scale(1);
+  transition: 0.25s;
+  user-select: none;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.funny-captcha .captcha-answer-container-inner .captcha-columns .captcha-column .selected img {
+  transform: scale(0.8);
+}
+.funny-captcha .captcha-answer-container-inner .captcha-columns .captcha-column div.unselected {
+  position: relative;
+  z-index: 10;
+}
+.funny-captcha .captcha-answer-container-inner .captcha-columns .captcha-column div::before {
+  content: "";
+  font-size: 25px;
+  line-height: 23px;
+  transition: 0.25s;
+  width: 20px;
+  color: white;
+  background: rgba(255, 255, 255, 0);
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  background: #1a73e8;
+  z-index: -1;
+  opacity: 0;
+  border: 1px solid #1a73e8;
+}
+.funny-captcha .captcha-answer-container-inner .captcha-columns .captcha-column div::after {
+  color: white;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+  content: "";
+  width: 5px;
+  height: 12px;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: 0.25s;
+}
+.funny-captcha .captcha-answer-container-inner .captcha-columns .captcha-column div.selected::after {
+  z-index: 21;
+  opacity: 1;
+  top: 7px;
+  left: 12px;
+}
+.funny-captcha .captcha-answer-container-inner .captcha-columns .captcha-column div.selected::before {
+  z-index: 20;
+  opacity: 1;
+  top: 5px;
+  left: 5px;
+}
+
+/*# sourceMappingURL=scorngyworngy.css.map */
